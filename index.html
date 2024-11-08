@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+            },
+            fontSize: {
+              OutfitBold: [
+                "22px",
+                {
+                  lineHeight: "120%",
+                  letterSpacing: "0",
+                  fontWeight: "700",
+                },
+              ],
+              OutfitRegular: [
+                "15px",
+                {
+                  lineHeight: "140%",
+                  letterSpacing: "0.2px",
+                  fontWeight: "400",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>QR code component</title>
+  </head>
+  <body class="h-screen flex flex-col items-center justify-center bg-slate-300">
+    <main
+      class="bg-white flex flex-col items-center px-4 pt-4 gap-y-6 rounded-3xl gap-y-4 w-72 text-center"
+    >
+      <img
+        class="rounded-3xl"
+        src="images/image-qr-code.png"
+        alt="qr-code-image"
+      />
+      <section class="flex flex-col items-center gap-y-4 mb-10">
+        <h2 class="font-bold text-OutfitBold text-slate-900">
+          Improve your front-end skills by building projects
+        </h2>
+        <p class="text-slate-500 text-OutfitRegular">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
